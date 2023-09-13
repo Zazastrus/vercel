@@ -4,5 +4,11 @@
         "use": "@vercel/python",
         "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
     }],
-    "trailingSlash": true
+    "routes": [
+        {
+            "src": "myApp/(.*)",
+            "dest": "dev/wsgi.py"
+        }
+    ]
+    
 }
