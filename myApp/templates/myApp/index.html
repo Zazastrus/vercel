@@ -2,10 +2,17 @@
 <html lang="en">
     <head>
         <title>Hello, Kenobi</title>
+        <script src="{% static 'script.js' %}"></script>
     </head>
     <body>
-        <div>
+        <div id="kenobi">
             <h3>Hello, Kenobi</h3>
         </div>
+        <br>
+        <div id="anakin" disabled>
+            <h3>Hello, Skywalker</h3>
+        </div>
+        <br>
+        <button id="btn">Push Me</button>
     </body>
 </html>
