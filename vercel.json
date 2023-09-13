@@ -6,7 +6,7 @@
     }],
     "routes": [
         {
-            "src": "myApp/(.*)",
+            "src": "/(.*)",
             "dest": "dev/wsgi.py"
         }
     ]
