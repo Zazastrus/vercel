@@ -4,16 +4,15 @@
     <head>
         <title>Hello, Kenobi</title>
         <script type="text/javascript" src="{% static 'myApp/script.js' %}"></script>
+        <link rel="stylesheet" href="{% static 'myApp/style.css' %}">
     </head>
     <body>
-        <div id="kenobi">
+        <div id="kenobi" style="display: block;">
             <h3>Hello, Kenobi</h3>
         </div>
-        <br>
-        <div id="anakin" disabled>
+        <div id="anakin" style="display: none;">
             <h3>Hello, Skywalker</h3>
         </div>
-        <br>
         <button id="btn">Push Me</button>
     </body>
 </html>

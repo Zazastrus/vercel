@@ -1,17 +1,16 @@
-header('Content-Type: text/javascript');
 document.addEventListener('DOMContentLoaded', function() {
     const btn = document.getElementById('btn');
     const anakin = document.getElementById('anakin');
     const kenobi = document.getElementById('kenobi');
 
     btn.onclick = () => {
-        if (kenobi.disabled == false){
-            kenobi.disabled = true;
-            anakin.disabled = false;
+        if (kenobi.style.display == 'block'){
+            kenobi.style.display = 'none';
+            anakin.style.display = 'block';
         }
         else{
-            kenobi.disabled = false;
-            anakin.disabled = true;
+            kenobi.style.display = 'block';
+            anakin.style.display = 'none';
         }
     }
 })
