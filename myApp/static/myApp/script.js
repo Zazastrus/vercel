@@ -1,3 +1,4 @@
+header('Content-Type: text/javascript');
 document.addEventListener('DOMContentLoaded', function() {
     const btn = document.getElementById('btn');
     const anakin = document.getElementById('anakin');
